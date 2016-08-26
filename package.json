@@ -11,9 +11,11 @@
     "test": "./node_modules/mocha/bin/mocha ./tests/accept/*.js --timeout 15000"
   },
   "dependencies": {
+    "body-parser": "^1.15.2",
     "cors": "^2.7.1",
     "ejs": "^2.5.1",
     "express": "^4.14.0",
+    "joi": "^9.0.4",
     "marked": "^0.3.6",
     "mongoose": "^4.5.9",
     "mongoose-seed": "^0.3.1",

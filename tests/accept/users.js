@@ -58,4 +58,24 @@ describe('Users', function() {
       });
     });
   });
+
+  describe('/PUT users/:id', function() {
+    it('should update a single user', function(done) {
+      // Find a user in the DB
+      User.findOne({}, function(err, user) {
+        var id = user._id;
+
+        // Read this user by id
+        chai.request(url)
+          .put('/users/' + id)
+          .send({ gender: 'none' })
+          .end(function(err, res) {
+            res.should.have.status(200);
+            expect(res.body).to.be.a('object');
+            expect(res.body.gender).to.be.eql('none');
+            done();
+          });
+      });
+    });
+  });
 });

@@ -2,6 +2,8 @@
 
 This sample project will give you a minimal RESTful API to build your template against. It only implements user listing and reading - feel free to add other actions (e.g. update, delete, create) as you see fit. It is built using JavaScript/Node.js (our language of choice), ExpressJS (a small, lightweight web MVC framework) & Mongoose (a MongoDB object modelling library).
 
+It also include a simple web app to display the users information, and allow you to search for a specific user. This highlights that expensive frameworks (both css and structural) are not required to get an app that can be installed to your homescreen on mobile, but also work beautifully on any modern, web enabled device with a minimal amount of code and no external libraries.
+
 ## Pre-requisites
 
 To get started, you'll need to have the following requirements installed

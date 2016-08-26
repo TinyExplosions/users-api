@@ -1,0 +1,22 @@
+CACHE MANIFEST
+# 2016-08-25:v1
+
+# Explicitly cached 'master entries'.
+CACHE:
+index.html
+style.css
+worker.js
+icons/birthday.svg
+icons/cell.svg
+icons/close.svg
+icons/email.svg
+icons/floppy.svg
+icons/home.svg
+icons/phone.svg
+icons/pps.svg
+icons/icon-152.png
+icons/icon-196.png
+
+# Resources that require the user to be online.
+NETWORK:
+*

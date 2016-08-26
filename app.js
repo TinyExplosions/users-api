@@ -13,6 +13,7 @@ var app = express();
 // Add middleware
 app.use(cors());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use("/app", express.static(path.join(__dirname, 'app')));
 app.use(morgan('dev'));
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
@@ -44,6 +45,7 @@ if (require.main === module) {
   // Only listen when app.js is run - acceptance tests will listen on another port
   app.listen(8000, function() {
     logger.info('Listening at http://localhost:8000 - see here for API docs');
+    logger.info('See http://localhost:8000/app to see the app');
   });
 }
 
